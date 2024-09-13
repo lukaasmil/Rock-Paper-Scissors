@@ -1,3 +1,31 @@
 import random
-uzivatel_odpoved = input("Zadej (kamen, nuzky, papir ): ")
-random_library = 
+uzivatel_odpoved = input("Zadej (rock, paper, scissors ): ")
+random_odpoved = random.choice(uzivatel_odpoved)
+pc_odpoved = random.choice
+
+if uzivatel_odpoved == pc_odpoved:
+    print(f"Both players selected {pc_odpoved}. It's a tie!")
+elif uzivatel_odpoved == "rock":
+    if pc_odpoved == "scissors":
+        print("Rock smashes scissors! You win!")
+    else:
+        print("Paper covers rock! You lose.")
+elif uzivatel_odpoved == "paper":
+    if pc_odpoved == "rock":
+        print("Paper covers rock! You win!")
+    else:
+        print("Scissors cuts paper! You lose.")
+elif uzivatel_odpoved == "scissors":
+    if pc_odpoved == "paper":
+        print("Scissors cuts paper! You win!")
+    else:
+        print("Rock smashes scissors! You lose.")
+
+
+
+# For this open source project (XD) you can add any updates, like small chance of getting like diamond that beats everything.. Up to yall on git
+# Made by lukaasmil, do whatever ya want with this its simple as hell lol 
+
+else:
+    print("ERROR, PLEASE CHOOSE VALID OPTION!")
+
